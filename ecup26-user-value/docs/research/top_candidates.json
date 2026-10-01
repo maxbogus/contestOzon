@@ -1,0 +1,5 @@
+{
+  "hashes": [],
+  "folds": ["giftG", "actor3"],
+  "note": "Хеши/папки в этом списке НИКОГДА не удаляются cache_cleanup.py. Заполняйте 'hashes' хэшами топ-LB-кандидатов (содержимое data/.cache), 'folds' - именами fold-кэшей top-кандидатов. Лимит кэша: 10 GB (data/folds + data/.cache)."
+}

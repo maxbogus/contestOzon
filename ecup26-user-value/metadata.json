@@ -1,0 +1,4 @@
+{
+  "image": "maxbogus/ecup26-user-value:latest",
+  "entry_point": "python -u run.py"
+}

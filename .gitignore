@@ -1,0 +1,109 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.cover
+.pyright/
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# uv.lock — DO NOT IGNORE, committed for reproducibility
+uv.lock
+
+# Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.yaml
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# Test / coverage
+.tox/
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+
+# Backup files
+backups/
+*.bak
+*.tmp
+
+# Large data files (parquet, csv, zip, etc.) — handled via git-lfs (see .gitattributes)
+*.parquet
+*.csv
+*.zip
+*.joblib
+*.npy
+*.bin
+*.safetensors
+
+# Ollama/models cache
+.ollama/
+
+# === Cline / AI artifacts (NOT committed per user request) ===
+.clinerules/
+ai/
+shared/.clinerules/
+
+# === ML experiment artifacts (regenerated from code) ===
+# Submissions from local experiments
+ecup26-user-value/submissions/
+
+# Catboost training artifacts
+ecup26-user-value/catboost_info/
+
+# Pre-processed feature caches (regenerable from train.parquet + code)
+ecup26-user-value/data/cache/
+ecup26-user-value/data/.cache/features_*.parquet
+ecup26-user-value/data/.cache/train_*.parquet
+ecup26-user-value/data/folds/
+ecup26-user-value/data/sequences/
+ecup26-user-value/data/static/
+
+# Whitelist specific datasets / models to be tracked via git-lfs
+# (overrides the *.parquet / *.csv / *.pt rules above)
+!ecup26-user-value/data/train.parquet
+!ecup26-user-value/data/sample_submit.csv
+!ecup26-user-value/data/submit.csv
+!ecup26-user-value/data/baseline-seacrh-ltv.ipynb
+!ecup26-user-value/data/.cache/model_*.txt
+!ecup26-user-value/models/neural/*.pt
+
+# Data directories — structure kept, content ignored
+# scripts/ are committed
+# docs/ are committed
+# tasks/ are committed
+# models/ — neural/*.pt tracked via LFS, others ignored

@@ -1,0 +1,12 @@
+# Git LFS — track large artifacts via LFS instead of Git objects
+
+# Original contest datasets
+ecup26-user-value/data/train.parquet filter=lfs diff=lfs merge=lfs -text
+ecup26-user-value/data/sample_submit.csv filter=lfs diff=lfs merge=lfs -text
+ecup26-user-value/data/submit.csv filter=lfs diff=lfs merge=lfs -text
+ecup26-user-value/data/baseline-seacrh-ltv.ipynb filter=lfs diff=lfs merge=lfs -text
+
+# Trained model weights (PyTorch checkpoints, CatBoost text models)
+ecup26-user-value/models/neural/*.pt filter=lfs diff=lfs merge=lfs -text
+ecup26-user-value/models/neural/*.json filter=lfs diff=lfs merge=lfs -text
+ecup26-user-value/data/.cache/model_*.txt filter=lfs diff=lfs merge=lfs -text

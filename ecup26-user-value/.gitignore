@@ -1,0 +1,45 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# NOTE: uv.lock is deliberately TRACKED (R6 reproducibility + Dockerfile
+# `uv sync --frozen` requires it). Do not add it back here.
+
+.env
+.env.local
+*.pem
+*.key
+
+# Data
+data/
+*.parquet
+*.csv
+*.zip
+*.joblib
+
+# Models (artifact dir at repo root; do NOT match nested src/.../models/)
+/models/
+*.bin
+*.pth
+*.safetensors
+
+artifacts/
+*.npy
+
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+catboost_info/
